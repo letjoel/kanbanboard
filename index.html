@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Whiteboard</title>
+</head>
+
+<body>
+    <!-- POP UP Inicio -->
+    <div class="popUpWrapper">
+
+        <div class="popUp">
+            <div class="popUpClose">
+                <button class="popUpClose">X</button>
+            </div>
+            <div class="popUpForm">
+                <h3>New Task</h3>
+                <p>Title:</p><input id="titulo" type="text" size="40" value="">
+                <p>Description:</p>
+                <Textarea id="descripcion" name="desc" rows="10" cols="35"></Textarea>
+                <p>Assigned to:</p><input id="asignacion" type="text" size="40" value="">
+                <br><br>
+                <input id="botonEnviarTarea" type="submit" class="popUpBotonEnviar" value="Send" />
+                <input id="saveChangesButton" type="submit" value="Save" />
+            </div>
+        </div>
+    </div>
+    <!-- POP UP Final -->
+
+
+    <h1><a href="./">Whiteboard</a></h1>
+    <div class="logo1"></div>
+    <div class="logo2"></div>
+    <div class="logo3"></div>
+
+    <button id="nuevaTareaToDo">+</button>
+    <br><br>
+    <div class="container">
+
+        <section id="columna1" class="column1">
+            <h2>To Do</h2>
+            <div class="toDoContainer">
+
+            </div>
+        </section>
+
+        <section class="column2">
+            <h2>Doing</h2>
+            <div class="doingContainer">
+
+            </div>
+        </section>
+
+
+        <section class="column3">
+            <h2>Done</h2>
+            <div class="doneContainer">
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+<script src="js/script.js" type="module"></script>
+<!-- <script src="js/dragndrop.js" type="module"></script> -->
+
+
+</html>
